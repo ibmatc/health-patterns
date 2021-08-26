@@ -10,3 +10,4 @@ jobs:
       - uses: J12934/helm-gh-pages-action@master
         with:
           access-token: ${{ secrets.ACTIONS_ACCESS_TOKEN }}
+          charts-folder: cohort-service
