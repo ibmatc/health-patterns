@@ -1,9 +1,6 @@
 name: Helm Publish
 
-on:
-  push:
-    branches:
-      - dev
+on: push
 
 jobs:
   build:
