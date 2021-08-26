@@ -26,4 +26,4 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.ACTIONS_ACCESS_TOKEN }}"
         with:
-          charts_dir: docs/charts
+          charts_dir: helm-charts
