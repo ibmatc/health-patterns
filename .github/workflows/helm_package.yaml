@@ -26,4 +26,4 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.ACTIONS_ACCESS_TOKEN }}"
         with:
-          charts_dir: cohort-service/chart
+          charts_dir: helm-charts/health-patterns
