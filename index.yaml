@@ -1,0 +1,112 @@
+apiVersion: v1
+entries:
+  health-patterns:
+  - apiVersion: v2
+    appVersion: s7
+    created: "2021-08-26T19:56:12.071946215Z"
+    dependencies:
+    - condition: fhir.enabled
+      name: fhir
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.4.0
+    - condition: fhir.enabled
+      name: term-services-prep
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.1.0
+    - condition: fhir-trigger.enabled
+      name: fhir-trigger
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.1.0
+    - alias: fhir-deid
+      condition: fhir-deid.enabled
+      name: fhir
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.4.0
+    - alias: fhir-deid-trigger
+      condition: fhir-deid-trigger.enabled
+      name: fhir-trigger
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.1.0
+    - condition: deid.enabled
+      name: deid
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 1.0.1
+    - condition: deid.enabled
+      name: deid-prep
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.1.0
+    - condition: cohort-service.enabled
+      name: cohort-service
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 1.0.1
+    - condition: nifi-registry.enabled
+      name: nifi-registry
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.1.0
+    - condition: ascvd.enabled
+      name: ascvd
+      repository: https://alvearie.github.io/health-analytics/charts
+      version: 0.1.0
+    - condition: ascvd.enabled
+      name: ascvd-from-fhir
+      repository: https://alvearie.github.io/health-analytics/charts
+      version: 0.1.0
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://charts.bitnami.com/bitnami
+      version: 6.0.0
+    - condition: nifi.enabled
+      name: nifi
+      repository: https://cetic.github.io/helm-charts
+      version: 0.6.0
+    - condition: kafka.enabled
+      name: kafka
+      repository: https://charts.bitnami.com/bitnami
+      version: 12.1.0
+    - condition: kafka.enabled
+      name: expose-kafka
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.1.0
+    - condition: cql-bulkexport.enabled
+      name: cql-bulkexport
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.1.0
+    - condition: nlp-insights.enabled
+      name: nlp-insights
+      repository: https://alvearie.github.io/health-patterns/charts
+      version: 0.1.0
+    - condition: kube-prometheus-stack.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 12.0.4
+    - condition: hl7-resource-generator.enabled
+      name: hl7-resource-generator
+      repository: https://alvearie.github.io/hl7-resource-generator-service/chart
+      version: 0.1.1
+    description: A Helm Chart to deploy the Alvearie Health Patterns reference implementations
+      for clinical data ingestion and enrichment.
+    digest: a592475f7d8b2ec6382581e9a5f38d92e3c3b38460213b063883344a92aebf93
+    home: https://github.com/Alvearie/health-patterns/helm-charts/health-patterns
+    icon: https://avatars3.githubusercontent.com/u/72946463?s=200&v=4
+    keywords:
+    - ibm
+    - fhir
+    - nifi
+    - ingestion
+    - enrichment
+    - health records
+    - clinical data
+    - alvearie
+    maintainers:
+    - email: atclark@us.ibm.com
+      name: Adam T. Clark
+    - email: dlranum@us.ibm.com
+      name: David Ranum
+    - email: luisg@us.ibm.com
+      name: Luis A. Garcia
+    name: health-patterns
+    type: application
+    urls:
+    - https://github.com/ibmatc/health-patterns/releases/download/health-patterns-0.8.1/health-patterns-0.8.1.tgz
+    version: 0.8.1
+generated: "2021-08-26T19:56:12.071960816Z"
