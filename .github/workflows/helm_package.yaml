@@ -26,4 +26,5 @@ jobs:
         env:
           CR_TOKEN: "${{ secrets.ACTIONS_ACCESS_TOKEN }}"
         with:
-          charts_dir: helm-charts/health-patterns
+          charts_dir: docs/charts
+          charts_repo_url: https://alvearie.io/health-patterns
